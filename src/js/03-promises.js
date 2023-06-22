@@ -13,9 +13,6 @@ function getValues() {
   delayValue = parseInt(delay.value);
   stepValue = parseInt(step.value);
   amountValue = parseInt(amount.value);
-  console.log(delayValue);
-  console.log(stepValue);
-  console.log(amountValue);
 }
 
 function generatePromises() {
