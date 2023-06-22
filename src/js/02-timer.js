@@ -54,14 +54,14 @@ function convertMs(ms) {
   return { days, hours, minutes, seconds };
 }
 function addLeadingZero(value) {
-  for (key in value) {
+  for (let key in value) {
     value[key] = String(value[key]).padStart(2, '0');
   }
   return value;
 }
 function countDownTime() {
   ms = dateSelected - new Date();
-  if (ms < 1000) {
+  if (ms < 999) {
     clearInterval(intervalId);
   }
   let convertedValues = convertMs(ms);
